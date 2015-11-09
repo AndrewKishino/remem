@@ -1,0 +1,25 @@
+{
+  "name": "Remem",
+  "version": "0.0.1",
+  "description": "Simple notes",
+  "homepage": "https://github.com/andrewkishino/remem",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules/",
+    "bower_components",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-sanitize": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
+    "underscore": "~1.8.3",
+    "checklist-model": "~0.6.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.5"
+  }
+}

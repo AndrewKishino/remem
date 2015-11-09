@@ -1,0 +1,6 @@
+lib
+*.log
+build/
+dist/
+client/lib
+node_modules/
