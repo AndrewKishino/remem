@@ -2,6 +2,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -14,23 +15,28 @@ body {
 
 .container {
   min-height: 100%;
-  background-color: #C6E7CE;
-}
-
-.component {
-  display: block;
+  background-color: #DDD;
+  margin-bottom: -30px;
 }
 
 .main {
   overflow: auto;
-  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 768px) {
   .main {
     overflow: auto;
-    padding-bottom: 30px;
   }
+}
+
+header {
+  height: 60px;
+  background-color: #AAA;
+}
+
+.footer {
+  height: 30px;
+  background-color: #AAA;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

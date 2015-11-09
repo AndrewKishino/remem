@@ -3,6 +3,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -15,22 +16,16 @@ body {
 
 .container {
   min-height: 100%;
-  background-color: #C6E7CE;
-}
-
-.component {
-  display: block;
+  background-color: #DDD;
+  margin-bottom: -$footer-height;
 }
 
 .main {
   overflow:auto;
-  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 768px) {
   .main {
     overflow:auto;
-    padding-bottom: 30px;
   }
-
 }
