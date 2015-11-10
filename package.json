@@ -2,8 +2,26 @@
   "name": "remem",
   "version": "0.0.1",
   "description": "Simple notes",
-  "main": "gulpfile.js",
-  "dependencies": {},
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "postinstall": "bash ./deploy.sh"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.3",
+    "bower": "^1.5.2",
+    "express": "~4.9.x",
+    "gulp": "^3.9.0",
+    "morgan": "^1.6.1",
+    "q": "^1.4.1",
+    "querystring": "^0.2.0",
+    "request": "^2.61.0",
+    "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",

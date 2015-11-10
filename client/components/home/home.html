@@ -1,6 +1,9 @@
 <div ng-controller="HomeController as home">
   <div class="component">
-    
+    <button class="add-button" ng-click="home.addNote()" type="primary"><img class="add-icon" src="img/add-w.svg"></img></button>
+    <div class="note" ng-repeat="key in home.lsKeys">
+      {{ home.getItem(key) }}
+    </div>
   </div>
   <spinner-directive display="home.showSpinner"></spinner-directive>
 </div>

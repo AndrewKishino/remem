@@ -15,7 +15,8 @@
     .module('app', [
       'ui.router',
       'checklist-model',
-      'ngSanitize'
+      'ngSanitize',
+      'LocalStorageModule'
     ])
     .config(config)
     .run(run);
@@ -24,7 +25,7 @@
    * config() Bootstraps the initial configuration for our application, setting
    * up the states based on UI Router. Returns nothing.
    */
-  function config($stateProvider, $urlRouterProvider) {
+  function config($stateProvider, $urlRouterProvider, localStorageServiceProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
@@ -32,6 +33,18 @@
         url: '/',
         templateUrl: 'components/home/home.html'
       });
+
+    $stateProvider
+      .state('note', {
+        url: '/note',
+        templateUrl: 'components/note/note.html'
+      });
+
+    localStorageServiceProvider
+      .setStorageCookie(0, '<path>');
+
+    localStorageServiceProvider
+      .setPrefix('remem');
   }
 
   /**
