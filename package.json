@@ -1,7 +1,8 @@
 {
-  "name": "remem",
+  "name": "Remem",
   "version": "0.0.1",
   "description": "Simple notes",
+  "homepage": "https://github.com/andrewkishino/remem",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -11,6 +12,7 @@
     "bluebird": "^2.9.34",
     "body-parser": "^1.13.3",
     "bower": "^1.5.2",
+    "dotenv": "^1.2.0",
     "express": "~4.9.x",
     "gulp": "^3.9.0",
     "morgan": "^1.6.1",
@@ -22,6 +24,11 @@
   "engines": {
     "node": "0.12.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewkishino/remem.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
@@ -38,18 +45,5 @@
     "gulp-sass": "^2.0.4",
     "gulp-shell": "^0.4.3",
     "jshint-stylish": "^2.0.1"
-    },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndrewKishino/remem.git"
-  },
-  "author": "Andrew Kishino",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AndrewKishino/remem/issues"
-  },
-  "homepage": "https://github.com/AndrewKishino/remem#readme"
+  }
 }
