@@ -191,7 +191,7 @@
           // show close control
           classie.add(closeCtrl, 'close-button--show');
           // sets overflow hidden to the body and allows the switch to the content scroll
-          classie.addClass(bodyEl, 'noscroll');
+          // classie.addClass(bodyEl, 'noscroll');
 
           isAnimating = false;
         });
