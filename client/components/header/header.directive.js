@@ -14,7 +14,7 @@
     .module('app')
     .directive('headerDirective', headerDirective);
 
-  function headerDirective() {
+  function headerDirective($state) {
     var directive = {
       restrict: 'EA',
       scope: {
@@ -27,7 +27,11 @@
     return directive;
 
     function link(scope, elem, attrs) {
-
+      scope.addNote = function() {
+        var bodyEl = document.body;
+        classie.removeClass(bodyEl, 'noscroll');
+        $state.go('note');
+      };
     }
   }
 

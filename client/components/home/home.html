@@ -1,9 +1,27 @@
 <div ng-controller="HomeController as home">
   <div class="component">
-    <button class="add-button" ng-click="home.addNote()" type="primary"><img class="add-icon" src="img/add-w.svg"></img></button>
-    <div class="note" ng-repeat="key in home.lsKeys">
-      {{ home.getItem(key) }}
-    </div>
+    <div class="container">
+      <div id="theGrid" class="main">
+        <section class="grid">
+
+          <a class="grid__item" ng-repeat="key in home.lsKeys">
+            <h2 class="title title--preview">{{ key }}</h2>
+            <div class="loader"></div>
+            <div class="action-icons"><i class="fa fa-trash-o fa-2x" ng-click="home.removeItem(key)"></i></div>
+          </a>
+
+        </section>
+        <section class="content">
+          <div class="scroll-wrap">
+            <article class="content__item" ng-repeat="key in home.lsKeys">
+              <h2 class="title title--full">{{ key }}</h2>
+              <p>{{ home.getItem(key) }}</p>
+            </article>
+          </div>
+          <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+        </section>
+      </div>
+    </div><!-- /container -->
+
   </div>
-  <spinner-directive display="home.showSpinner"></spinner-directive>
 </div>

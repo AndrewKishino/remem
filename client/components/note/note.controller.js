@@ -16,13 +16,28 @@
    * @description Contains all the functionality for the NoteController. Returns
    *   nothing.
    */
-  function NoteController(localStorageService) {
+  function NoteController($state, $window, localStorageService) {
     var vm = this;
 
-    init();
+    vm.lsKeys = localStorageService.keys();
+    vm.lsLength = localStorageService.length();
+    vm.submit = submit;
+    vm.getItem = getItem;
+    vm.goHome = goHome;
+    vm.note = '';
+    vm.title = '';
 
-    function init() {
-      
+    function submit(key, val) {
+      localStorageService.set(key, val);
+      $window.location = '/';
+    }
+
+    function getItem(key) {
+      return localStorageService.get(key);
+    }
+
+    function goHome() {
+      $window.location = '/';
     }
 
   }

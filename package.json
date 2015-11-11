@@ -1,7 +1,7 @@
 {
-  "name": "Remem",
+  "name": "LocalStore Notes",
   "version": "0.0.1",
-  "description": "Simple notes",
+  "description": "Simple local storage notes",
   "homepage": "https://github.com/andrewkishino/remem",
   "main": "server/index.js",
   "scripts": {

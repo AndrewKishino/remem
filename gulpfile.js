@@ -34,7 +34,7 @@
    */
   var paths = {
     sass: ['./client/sass/**/*.scss'],
-    scripts: ['./gulpfile.js', './client/**/*.js', '!./client/lib/**/*.js', './server/**/*.js']
+    scripts: ['./gulpfile.js', './client/**/*.js', '!./client/lib/**/*.js', '!./client/js/*.js', './server/**/*.js']
   };
 
   /**
