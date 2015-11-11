@@ -191,7 +191,7 @@
           // show close control
           classie.add(closeCtrl, 'close-button--show');
           // sets overflow hidden to the body and allows the switch to the content scroll
-          // classie.addClass(bodyEl, 'noscroll');
+          classie.addClass(bodyEl, 'noscroll');
 
           isAnimating = false;
         });
@@ -208,7 +208,7 @@
         setTimeout(function() {
           var dummy = gridItemsContainer.querySelector('.placeholder');
 
-          // classie.removeClass(bodyEl, 'noscroll');
+          classie.removeClass(bodyEl, 'noscroll');
 
           dummy.style.WebkitTransform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',1)';
           dummy.style.transform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',1)';
