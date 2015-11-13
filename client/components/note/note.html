@@ -1,5 +1,25 @@
 <div ng-controller="NoteController as note">
   <div class="component">
-    
+    <div class="compose-note">
+      <div class="note-header">
+        <h4 class="note-title">New Note</h4>
+      </div>
+      <div class="note-body">
+        <form class="forms">
+            <section>
+              <label>Title</label>
+              <input id="inputSubject" type="text" ng-model="note.title" placeholder="Title">
+            </section>
+            <section>
+              <label>Content</label>
+              <textarea id="inputBody" ng-model="note.note" rows="8"></textarea>
+            </section>
+            <section>
+              <button type="primary" ng-click="note.submit(note.title, note.note)"class="btn note-btn pull-right">Save</button>
+              <button type="black" ng-click="note.goHome()" class="btn note-btn pull-right">Cancel</button> 
+            </section>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

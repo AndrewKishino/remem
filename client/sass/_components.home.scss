@@ -1,20 +1,42 @@
-.note {
+.note-container {
   display: inline-block;
-  width: 150px;
-  height: 150px;
-  background-color: #555;
-  // margin: 10px;
+  width: 33.333vw;
+  height: 33.333vw;
 }
 
-.add-button {
-  float: right;
-  margin: 9px;
-  width: 80px;
-  height: 40px;
-  border: none;
-  box-shadow: 0px 1px 2px #A9A9A9;
+.note {
+  background-color: #BDBDBD;
+  padding: 5px;
+  height: inherit;
 }
 
-.add-icon {
-  
+.note-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.note-body {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .note-container {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .note {
+
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .note-container {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .note {
+
+  }
 }

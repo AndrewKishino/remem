@@ -14,7 +14,7 @@
     .module('app')
     .directive('headerDirective', headerDirective);
 
-  function headerDirective() {
+  function headerDirective($state) {
     var directive = {
       restrict: 'EA',
       scope: {
@@ -27,7 +27,13 @@
     return directive;
 
     function link(scope, elem, attrs) {
+      scope.addNote = function(){
+        $state.go('note');
+      };
 
+      scope.goHome = function(){
+        $state.go('home');
+      };
     }
   }
 

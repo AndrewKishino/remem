@@ -22,6 +22,18 @@ body {
   overflow: auto;
 }
 
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+textarea {
+  resize: none;
+}
+
 @media screen and (max-width: 768px) {
   .main {
     overflow: auto;
@@ -30,24 +42,80 @@ body {
 
 header {
   height: 60px;
-  background-color: #2F77D1;
+  background-color: #134788;
   box-shadow: 0px 1px 2px #A9A9A9;
-}
-
-.note {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  background-color: #555;
 }
 
 .add-button {
-  float: right;
-  margin: 9px;
-  width: 80px;
-  height: 40px;
-  border: none;
-  box-shadow: 0px 1px 2px #A9A9A9;
+  color: #FFF;
+  margin: 24px 24px 20px 24px;
+}
+
+.home-button {
+  color: #FFF;
+  margin: 15px 20px;
+}
+
+.logo-icon {
+  width: 40px;
+  margin-top: -5px;
+}
+
+.logo {
+  color: #FFF;
+  font-size: 26px;
+  padding-top: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .logo-icon {
+    width: 40px;
+    margin-top: -3px;
+  }
+  .logo {
+    font-size: 16px;
+    padding-top: 13px;
+  }
+}
+
+.note-container {
+  display: inline-block;
+  width: 33.333vw;
+  height: 33.333vw;
+}
+
+.note {
+  background-color: #BDBDBD;
+  padding: 5px;
+  height: inherit;
+}
+
+.note-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.note-body {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .note-container {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .note-container {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.note-btn {
+  margin: 10px 0 0 10px;
 }
 
 /* -----------------------------------------------------------------------------
